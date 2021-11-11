@@ -4,3 +4,10 @@ appletree.iml
 
 # pyenv file
 .python-version
+
+# bazel generated files
+bazel-appletree
+bazel-bin
+bazel-out
+bazel-testlogs
+
