@@ -1,3 +1,6 @@
 # IDE generated files
 .idea
 appletree.iml
+
+# pyenv file
+.python-version
