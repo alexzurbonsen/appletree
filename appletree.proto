@@ -1,39 +1,25 @@
 syntax = "proto3";
 
-service Appletree {
-    rpc GrowApple(Time) returns (AppleStatus) {}
-    
-    rpc GetApple(Bucket) returns (Bucket) {}
-
-    rpc WaterTree(Water) returns (SoilStatus) {}
-} 
+service AppleTree {
+    rpc ShakeAppleTree(Time) returns (NumberOfApples) {}
+}
 
 
 message Time {
-    // time in whole days
-    int32 time = 1;
+    // time in minutes
+    int32 time_min = 1;
 }
 
-message AppleStatus {
-    // number of apples currently on the tree
+message NumberOfApples {
     int32 num_apples = 1;
 }
 
-message Bucket {
-    // remaining_space is the number of apples that can still fit in the bucket
-    int32 remaining_space = 1;
-}
-
-message Water {
-    int32 water_in_liters = 1;
-}
-
-enum SoilQuality {
-    GOOD = 0;
+enum IntensityLevel {
+    STRONG = 0;
     MEDIUM = 1;
-    BAD = 2;
+    GENTLE = 2;
 }
 
-message SoilStatus {
-    SoilQuality quality_status = 1;
+message Intensity {
+    IntensityLevel intensity_level = 1;
 }
