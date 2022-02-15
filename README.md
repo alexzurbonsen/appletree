@@ -1,4 +1,4 @@
-### Jaeger? Sammler! Harvesting apples, Apfelernte, or how they say in Hessen: Äppelärnde
+### Jaeger? Sammler! Harvesting apples, Apfelernte, or how they say in Hessen: Ebbelärnde
 
 To gather some apples with support from Jaeger first run (from the project root)
 
@@ -11,6 +11,8 @@ then run
 ```
 ./gen_proto_grpc.sh
 ```
+
+(and don't be irritated by the Bazel stuff. It's not of much use...) 
 
 Afterwards start the Jaeger all-in-one Docker Container with
 
@@ -28,10 +30,10 @@ In two separate terminals: 1) start the server
 python appletree_server.py
 ```
 
-2) start the client.
+and 2) start the client.
 
 ```
-python appletree_server.py
+python appletree_client.py
 ```
 
 In Hessen they like to make Äppler out of the Äppel. But that is not supported yet...
