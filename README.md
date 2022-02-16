@@ -9,9 +9,8 @@ pip install -r requirements.txt
 then run
 
 ```
-./gen_proto_grpc.sh
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. appletree.proto```
 ```
-
 (and don't be irritated by the Bazel stuff. It's not of much use...) 
 
 Afterwards start the Jaeger all-in-one Docker Container with
