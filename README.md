@@ -9,7 +9,7 @@ pip install -r requirements.txt
 then run
 
 ```
-python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. appletree.proto```
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. appletree.proto
 ```
 (and don't be irritated by the Bazel stuff. It's not of much use...) 
 
